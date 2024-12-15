@@ -1,0 +1,250 @@
+body {
+    background-color: #010407;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+::selection {
+    color: white;
+    background: #4b58cc;
+  }
+::-webkit-selection { 
+    color: white;
+    background:#4b58cc; 
+}
+::-moz-selection { 
+    color: white;
+    background: #4b58cc;
+}
+.ur-here {
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.274) 0%, rgba(255, 255, 255, 0) 100%);
+    position: relative;
+    padding-bottom: 10px;
+    border-radius: 50px;
+}
+span{
+    font-size: 0.7rem;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.479);
+    left:  50%;
+    transform: translateX(-50%);
+    bottom:0px;
+    -webkit-text-stroke: 0px rgb(255, 255, 255);
+    -moz-text-stroke: 0x rgb(255, 255, 255);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+#start:checked ~ .arrangement1 > .score-container > .score,
+#start:checked ~ .arrangement1 > .box-container > .controls > .controls-anim > div > div,
+#start:checked ~ .arrangement1 > .box-container > .controls > .controls-anim > div > div > div > input
+#start:checked ~ .arrangement1 > .box-container > .controls > .controls-anim > div > div > a > input,
+#start:checked ~ .arrangement1 > .box-container > .controls > .controls-anim > div > div > div > div > input{
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all-content {
+    height: 100%;
+}
+.box-container {
+    width: 82vh;
+    height: 82vh;
+    border: 2px solid gray;
+    border-radius: 10%;
+    background: transparent;
+    position: relative; 
+}
+.box {
+    width: 80vh;
+    height: 80vh;
+    background-color: rgb(166, 177, 189);
+    position: relative;
+    border-radius: 9%;
+    overflow: hidden;
+}
+.box2 {
+    width: 81vh;
+    height: 81vh;
+    border-radius: 8%;
+    background-color: #010407e0;
+    position: absolute;
+    z-index: 1;
+}
+#start {
+    display: none;
+}
+#start:checked ~ .arrangement1 > .box-container > .box2,
+#start:checked ~ #trigger-button2 {
+    display: none;
+}
+#start:checked ~ .arrangement1 > .score-container > .score {
+    visibility: visible;
+    animation-name: score_anim;
+    -webkit-animation-name: score_anim;
+    -moz-animation-name: score_anim;
+}
+@keyframes score_anim {
+    0%   { transform: translateY(-200%); }
+    100% { transform: translateY(0%); }
+}
+@-webkit-keyframes score_anim {
+    0%   { transform: translateY(-200%); }
+    100% { transform: translateY(0%); }
+}
+@-moz-keyframes score_anim {
+    0%   { transform: translateY(-200%); }
+    100% { transform: translateY(0%); }
+}
+.custom-button {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    padding: 18px 40px;
+    border-radius: 25px;
+    z-index: 2;
+    background: linear-gradient(0deg, rgba(26, 30, 34, 0.562) 0%, #4b58cc 100%);
+    position: absolute;
+    border: 0;
+    width: 170px;
+}
+#trigger-button2 {
+    top: 41.5%;
+    width: auto;
+}
+#trigger-button2:hover {
+    background-color: #4b58cc;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+.box:hover {
+    animation: grow2 0.2s ease-in-out;
+    -webkit-animation: grow2 0.2s ease-in-out;
+    -moz-animation: grow2 0.2s ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    cursor: crosshair
+}
+@keyframes grow2 {
+    0%   { transform: scale(1); }
+    100% { transform: scale(1.03); }
+}
+@-webkit-keyframes grow2 {
+    0%   { transform: scale(1); }
+    100% { transform: scale(1.03); }
+}
+@-moz-keyframes grow2 {
+    0%   { transform: scale(1); }
+    100% { transform: scale(1.03); }
+}
+.score-container {
+    overflow: hidden;
+    text-align: center;
+}
+.score {
+    padding: 20px 30px;
+    text-transform: uppercase;
+    margin: 25px 0px 0px 0px;
+    color: #bdbeca;
+    display: inline-block;
+    border: 2px solid gray;
+    border-radius: 50px;
+    background-color: rgba(128, 128, 128, 0.205);
+    visibility: hidden;
+}
+.controls{
+    width: 300px;
+    height: 100%;
+    background-color:transparent;
+    overflow: hidden;
+    position: absolute;
+    right: -300px;
+}
+.controls-anim{
+    box-sizing: border-box;
+    width: 250px;
+    height: 100%;
+    visibility: hidden;
+    z-index: 10;
+}
+.sub-overflow {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 3s, opacity 2s, visibility 2s;
+    overflow: hidden;
+    flex-direction: column;
+    width: 170px;
+}
+input[type="range"] {
+    width:120px;
+}
+.sub-style{
+    border: 1px solid  #82a8fc;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 148px;
+    text-align: center;
+}
+.sub-style p{
+    margin: 0;
+    color: white;
+    margin-top: 10px;
+}
+.sub-overflow.active {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+}
+.controls-anim > div > div{
+    height: 150px;
+}
+.input-button, .input-button1, .input-button2{
+    background: linear-gradient(-90deg, rgba(26, 30, 34, 0.562) 0%, #4b58cc 100%);
+    position:static;
+}
+.input-button:hover, .input-button1:hover, .input-button2:hover{
+    cursor: pointer;
+    background-color: #4b58cc;
+}      
+#start:checked ~ .arrangement1 > .box-container > .controls > .controls-anim > div > div,
+#start:checked ~ .arrangement1 > .box-container > .controls > .controls-anim > div > div > div > input
+#start:checked ~ .arrangement1 > .box-container > .controls > .controls-anim > div > div > a > input,
+#start:checked ~ .arrangement1 > .box-container > .controls > .controls-anim > div > div > div > div > input{
+    visibility: visible;
+    animation-name: controls_anim;
+    -webkit-animation-name: controls_anim;
+    -moz-animation-name: controls_anim;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+@keyframes controls_anim {
+    0%   {transform: translateX(-200px);}
+    100% {transform: translateX(0);}
+}
+@-webkit-keyframes controls_anim {
+    0%   {transform: translateX(-200px);}
+    100% {transform: translateX(0);}
+}
+@-moz-keyframes controls_anim {
+    0%   {transform: translateX(-200px);}
+    100% {transform: translateX(0);}
+}
+.shoot-target {
+    height: 23px;
+    width: 23px;
+    border-radius: 100%;
+    background-color: #3241ca;
+    position: absolute;
+}

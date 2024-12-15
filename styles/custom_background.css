@@ -1,0 +1,369 @@
+.elem-bg, .cb-top, .cb-bottom{
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+}
+.custom-background img{
+    position:absolute;
+}
+.elem1{
+    top:32%;
+    left:67%;
+}
+.elem2{
+    top:82%;
+    left:23%;
+}
+.elem3{
+    top:73%;
+    left:32%;
+}
+.elem4{
+    top:55%;
+    left:86%;
+}
+.elem5{
+    top:34%;
+    left:10%;
+}
+.elem6{
+    top:14%;
+    left:15%;
+}
+.elem7{
+    top:72%;
+    left:62%;
+}
+.elem8{
+    top:54%;
+    left:62%;
+}
+.elem9{
+    top:3%;
+    left:5%;
+}
+.elem10{
+    top:90%;
+    left:37%;
+}
+.elem11{
+    top:20%;
+    left:72%;
+}
+.elem12{
+    top:54%;
+    left:48%;
+}
+.elem13{
+    top:8%;
+    left:80%;
+}
+.elem14{
+    top:13%;
+    left:79%;
+}
+.elem15{
+    top:80%;
+    left:89%;
+}
+.elem16{
+    top:66%;
+    left:57%;
+}
+.elem17{
+    top:93%;
+    left:53%;
+}
+.elem18{
+    top:20%;
+    left:80%;
+}
+.elem19{
+    top:16%;
+    left:40%;
+}
+.elem20{
+    top:17%;
+    left:58%;
+}
+.elem21{
+    top:7%;
+    left:56%;
+}
+.elem22{
+    top:13%;
+    left:89%;
+}
+.elem23{
+    top:14%;
+    left:24%;
+}
+.elem24{
+    top:80%;
+    left:5%;
+}
+.elem25{
+    top:50%;
+    left:13%;
+}
+.elem26{
+    top:80%;
+    left:78%;
+}
+.elem27{
+    top:47%;
+    left:41%;
+}
+.elem28{
+    top:36%;
+    left:55%;
+}
+.elem29{
+    top:63%;
+    left:7%;
+}
+.elem30{
+    top:50%;
+    left:74%;
+}
+
+.circle1-size{
+    width:50px;
+    height:50px;
+}
+.circle2-size{
+    width:30px;
+    height:30px;
+}
+.triangle1-size{
+    width:60px;
+    height:70px;
+}
+.triangle2-size{
+    width:40px;
+    height:40px;
+}
+.triangle3-size{
+    width:50px;
+    height:50px;
+}
+.thunder-size{
+    width:80px;
+    height:80px;
+}
+
+.first-bg-anim{
+    animation-name: first_bg_anim;
+    animation-duration: 3s;
+    animation-delay:2.5s; 
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    -webkit-animation-name: first_bg_anim;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay:2.5s; 
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-name: first_bg_anim;
+    -moz-animation-duration: 3s;
+    -moz-animation-delay:2.5s; 
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction: alternate;
+}
+@keyframes first_bg_anim{
+    from {
+        transform: translateX(0) translateY(0);
+    }
+
+    to {
+        transform: translateX(10px) translateY(10px);
+    }
+}
+@-webkit-keyframes first_bg_anim{
+    from {
+        -webkit-transform: translateX(0) translateY(0);
+    }
+
+    to {
+        -webkit-transform: translateX(10px) translateY(10px);
+    }
+}
+@-moz-keyframes first_bg_anim{
+    from {
+        -moz-transform: translateX(0) translateY(0);
+    }
+
+    to {
+        -moz-transform: translateX(10px) translateY(10px);
+    }
+}
+.second-bg-anim{
+    animation-name: second_bg_anim;
+    animation-duration: 5s;
+    animation-delay:5s; 
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    -webkit-animation-name: second_bg_anim;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay:5s; 
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-name: second_bg_anim;
+    -moz-animation-duration: 5s;
+    -moz-animation-delay:5s; 
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction: alternate;
+}
+@keyframes second_bg_anim{
+    from {
+        transform: translateX(0) translateY(0);
+    }
+
+    to {
+        transform: translateX(-10px) translateY(-10px);
+    }
+}
+@-webkit-keyframes second_bg_anim{
+    from {
+        -webkit-transform: translateX(0) translateY(0);
+    }
+
+    to {
+        -webkit-transform: translateX(-10px) translateY(-10px);
+    }
+}
+@-moz-keyframes second_bg_anim{
+    from {
+        -moz-transform: translateX(0) translateY(0);
+    }
+
+    to {
+        -moz-transform: translateX(-10px) translateY(-10px);
+    }
+}
+.third-bg-anim{
+    animation-name: third_bg_anim;
+    animation-duration: 2.5s;
+    animation-delay:3s; 
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    -webkit-animation-name: third_bg_anim;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-delay:3s; 
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-name: third_bg_anim;
+    -moz-animation-duration: 2.5s;
+    -moz-animation-delay:3s; 
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction: alternate;
+}
+@keyframes third_bg_anim{
+    from {
+        transform: translateX(0) translateY(0);
+    }
+
+    to {
+        transform: translateX(10px) translateY(5px);
+    }
+}
+@-webkit-keyframes third_bg_anim{
+    from {
+        -webkit-transform: translateX(0) translateY(0);
+    }
+
+    to {
+        -webkit-transform: translateX(10px) translateY(5px);
+    }
+}
+@-moz-keyframes third_bg_anim{
+    from {
+        -moz-transform: translateX(0) translateY(0);
+    }
+
+    to {
+        -moz-transform: translateX(10px) translateY(5px);
+    }
+}
+.custom-background{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.custom-background, .cb-top, .cb-bottom{
+    position:absolute;
+    width: 1920px;
+    height: 1080px;
+    z-index: -5;
+}
+.elem-bg{
+    width: 100%;
+    height: 100%;
+    background: url("../custom background/img/confetti.png");
+    animation-name: elem_bg;
+    -webkit-animation-name: elem_bg;
+    -moz-animation-name: elem_bg;
+}
+.cb-top{
+    animation-name: cb_top;
+    animation-timing-function: ease;
+    -webkit-animation-name: cb_top;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-name: cb_top;
+    -moz-animation-timing-function: ease;
+}
+.cb-bottom{
+    overflow: hidden;
+    animation-name: cb_bottom;
+    animation-timing-function: ease;
+    -webkit-animation-name: cb_bottom;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-name: cb_bottom;
+    -moz-animation-timing-function: ease;
+}
+@keyframes elem_bg {
+    0%   {opacity: 0;}
+    20%  {opacity: 0;}
+    40%  {opacity: 0;}
+    60%  {opacity: 0;}
+    80%  {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes elem_bg {
+    0%   {opacity: 0;}
+    20%  {opacity: 0;}
+    40%  {opacity: 0;}
+    60%  {opacity: 0;}
+    80%  {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes elem_bg {
+    0%   {opacity: 0;}
+    20%  {opacity: 0;}
+    40%  {opacity: 0;}
+    60%  {opacity: 0;}
+    80%  {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+@keyframes cb_top {
+    0%   {top:-100%;}
+    100% {top:0%;}
+}
+@-webkit-keyframes cb_top {
+    0%   {top:-100%;}
+    100% {top:0%;}
+}
+@-moz-keyframes cb_top {
+    0%   {top:-100%;}
+    100% {top:0%;}
+}
+@keyframes cb_bottom {
+    0%   {bottom:-100%;}
+    100% {bottom:0%;}
+}
+@-webkit-keyframes cb_bottom {
+    0%   {bottom:-100%;}
+    100% {bottom:0%;}
+}
+@-moz-keyframes cb_bottom {
+    0%   {bottom:-100%;}
+    100% {bottom:0%;}
+}

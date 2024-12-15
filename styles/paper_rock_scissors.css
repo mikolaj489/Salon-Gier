@@ -1,0 +1,192 @@
+body {
+    background-color: #010407;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ur-here {
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.274) 0%, rgba(255, 255, 255, 0) 100%);
+    position: relative;
+    padding-bottom: 10px;
+    border-radius: 50px;
+}
+span{
+    font-size: 0.7rem;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.479);
+    left:  50%;
+    transform: translateX(-50%);
+    bottom:0px;
+    -webkit-text-stroke: 0px rgb(255, 255, 255);
+    -moz-text-stroke: 0x rgb(255, 255, 255);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.custom-button {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    padding: 18px 40px;
+    border-radius: 25px;
+    z-index: 2;
+    background: linear-gradient(0deg, transparent 0%, rgb(64, 224, 208) 89%); 
+    position: absolute;
+    transition: 0.4s;
+    border: 0;
+    width: 170px;
+}
+#start:checked ~  .spr-content > .box2,
+#start:checked ~ #trigger-button2 {
+    display: none;
+}
+.button {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 110px;
+    min-height: 110px;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    visibility: hidden;
+    background: linear-gradient(0deg, rgb(94, 124, 121) 4.4%, rgb(64, 224, 208) 89%); 
+    border:1px solid rgb(128, 128, 128);
+    border-radius: 20px;
+}
+#start:checked ~ .spr-container2 > .button {
+    visibility: visible;
+    animation-name: score_anim;
+    -webkit-animation-name: score_anim;
+    -moz-animation-name: score_anim;
+    animation-duration: 1s;
+}
+@keyframes score_anim {
+    0%   { transform: translateY(-200%); }
+    100% { transform: translateY(0%); }
+}
+@-webkit-keyframes score_anim {
+    0%   { transform: translateY(-200%); }
+    100% { transform: translateY(0%); }
+}
+@-moz-keyframes score_anim {
+    0%   { transform: translateY(-200%); }
+    100% { transform: translateY(0%); }
+}
+#start {
+    display: none;
+}
+#trigger-button2 {
+    top: 41.5%;
+    width: auto;
+}
+#trigger-button2:hover {
+    background-color:  rgb(40, 133, 123) ;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.box2 {
+    width: 81vh;
+    height: 81vh;
+    border-radius: 8%;
+    background-color: #010407e0;
+    position: absolute;
+    z-index: 1;
+}
+.spr-container-all {
+    flex-direction: column;
+    height: 100vh;
+}
+.spr-content{
+    width: 82vh;
+    height: 82vh;
+    border: 2px solid gray;
+    border-radius: 10%;
+    background: transparent;
+    position: relative; 
+}
+.spr-container{
+    width: 80vh;
+    height: 80vh;
+    background-color: rgb(166, 177, 189);
+    position: relative;
+    border-radius: 9%;
+    overflow: hidden;
+}
+
+.spr-container2 {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 135px;
+}
+.spr-container img{
+    position: absolute;
+    width: auto;
+    height:7vh;
+    max-width: 75vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+img,video{
+    height: 80px;
+    width: 80px;
+    transition: opacity 0.3s ease, transform 0.5s ease;
+}
+video{
+
+    height: 100px;
+    width: 100px;
+}
+.button video {
+    display: none;
+}
+
+.button:hover img {
+    display: none;
+}
+
+.button:hover video {
+    display: block;
+}
+
+.wybor {
+    width: auto;
+    height:15vh;
+    max-width: 80vh;
+}
+#wybor-papier-gracz {
+    width: 529px;
+}
+#wybor-papier-przeciwnik {
+    width: 692px;
+}
+#wybor-kamien-gracz {
+    width: 548px;
+}
+#wybor-kamien-przeciwnik {
+    width: 711px;
+}
+#wybor-nozyce-gracz {
+    width: 589px;
+}
+#wybor-nozyce-przeciwnik {
+    width: 752px;
+}
+
+.hidden {
+    display: none;
+}
+
+.animation-choice {
+    padding-top: 40px;
+    box-sizing: border-box;
+    width: 80vh;
+    height: 80vh;
+}
