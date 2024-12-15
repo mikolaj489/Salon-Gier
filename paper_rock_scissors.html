@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/games-controls.css">
+    <link rel="stylesheet" href="styles/paper_rock_scissors.css">
+    <link rel="web icon" href="assets/images/paper rock scissors/paper_rock_scissors-icon.png">
+    <title>Papier Kamień Nożyce</title>
+</head>
+<body class="flex">
+    <!--games-controls-->
+    <div class="logo-container">
+        <a href="arcade.html"><img src="assets/images/arcade/arrow.png"></a>
+        <div class="roll-container">
+            <p class="roll">Wróć</p>
+        </div>
+    </div>
+    <div class="logo-container2">
+        <a><img src="assets/images/arcade/info-game.png"></a>
+        <div class="roll-container2 flex">
+            <div class="flex">
+                <p class="roll2" style="font-size: 1.1rem;line-height: 20px;">Gra polega na jednoczesnym wybraniu przez graczy papieru, kamienia albo nożyczek. Obaj gracze dokonują wyboru w tym samym momencie. Zasady są następujące: kamień bije nożyczki, papier bije kamień, nożyczki biją papier.</p>
+            </div>  
+        </div>
+    </div>
+    <!--games-controls-->
+    <!--nav-->
+    <div class="nav-box">
+        <div class="box-shadow"></div>
+        <label class="navigation" for="navigation">
+            <input type="checkbox" id="navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    <input type="checkbox" id="toggle-menu" />
+    <label for="toggle-menu" id="trigger-button"></label>
+    <div id="nav-content">
+        <div class="box-anim">
+            <div class="hide-box">
+                <a href="index.html"><p>Strona główna</p></a>
+            </div>
+            <div class="hide-box">
+                <a href="arcade.html"><p>Salon gier</p></a>
+            </div>
+            <div>
+                <a id="moveBox1" class="triangle-right" href="#">
+                    <p style="margin-bottom: 0;"><img class="triangle1" src="assets/images/navigation/triangle.png"><img class="triangle2" src="assets/images/navigation/triangle2.png">Gry</p>
+                    <div class="tip-games">
+                        <p class="tip">Rozwiń</p>
+                        <p class="tip2">Zwiń</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="box1" class="nav-content-txt">
+            <a href="paper_rock_scissors.html"><p style="width:500px;" class="ur-here">Papier Kamień Nożyce<span>Jesteś Tutaj</span></p></a>
+            <a href="tic_tac_toe.html"><p>Kółko i Krzyżyk</p></a>
+            <a href="flip_coin.html"><p>Rzut Monetą</p></a>
+            <a href="flappy_bird.html"><p>Flappy Bird</p></a>
+            <a href="aim_lab.html"><p>Aim Lab</p></a>
+        </div>
+        <div id="bg-circle" class="bg-circle-container">
+            <div class="bg-circle"></div>
+        </div>
+    </div>
+    <!--nav-->
+    <div class="spr-container-all flex">
+        <input type="checkbox" id="start" />
+        <label for="start" class="custom-button" id="trigger-button2">Graj</label>
+        <div class="spr-content flex">
+            <div class="box2">
+            </div>
+            <div class="spr-container">
+                <!--zdjecia-->
+                <img id="wybor-papier-gracz" class="wybor hidden" src="assets/images/paper rock scissors/wybrales-as_papier.png">
+                <img id="wybor-kamien-gracz" class="wybor hidden" src="assets/images/paper rock scissors/wybrales-as_kamien.png">
+                <img id="wybor-nozyce-gracz" class="wybor hidden" src="assets/images/paper rock scissors/wybrales-as_nozyczki.png">
+                <img id="wybor-papier-przeciwnik" class="wybor hidden" src="assets/images/paper rock scissors/przeciwnik_wybral_papier.png">
+                <img id="wybor-kamien-przeciwnik" class="wybor hidden" src="assets/images/paper rock scissors/przeciwnik_wybral_kamien.png">
+                <img id="wybor-nozyce-przeciwnik" class="wybor hidden" src="assets/images/paper rock scissors/przeciwnik_wybral_nozyczki.png">
+                <!--animacja wychodzania rzeczy xD-->
+                <video id="animacja-wybor-papier-gracz" class="animation-choice hidden" src="assets/animations/paper rock scissors/choosedPaper-animation-left.webm" muted></video>
+                <video id="animacja-wybor-papier-przeciwnik" class="animation-choice hidden" src="assets/animations/paper rock scissors/choosedPaper-animation-right.webm" muted></video>
+                <video id="animacja-wybor-kamien-gracz" class="animation-choice hidden" src="assets/animations/paper rock scissors/choosedRock-animation-left.webm" muted></video>
+                <video id="animacja-wybor-kamien-przeciwnik" class="animation-choice hidden" src="assets/animations/paper rock scissors/choosed-rock-animation.webm" muted></video>
+                <video id="animacja-wybor-nozyce-gracz" class="animation-choice hidden" src="assets/animations/paper rock scissors/choosedScissors-animation-left.webm" muted></video>
+                <video id="animacja-wybor-nozyce-przeciwnik" class="animation-choice hidden" src="assets/animations/paper rock scissors/choosedScissors-animation-right.webm" muted></video>
+                <!--koncaowy wyik-->
+                <video id="animacja-nozyce-przegrywaja" class="animation-choice hidden" src="assets/animations/paper rock scissors/rockWins.webm" muted></video>
+                <video id="animacja-nozyce-wygrywaja" class="animation-choice hidden" src="assets/animations/paper rock scissors/scissorsWins2.webm" muted></video>
+                <video id="animacja-nozyce-remis" class="animation-choice hidden" src="assets/animations/paper rock scissors/scissorsTies.webm" muted></video>
+                <video id="animacja-papier-przegrywaja" class="animation-choice hidden" src="assets/animations/paper rock scissors/scissorsWins1.webm" muted></video>
+                <video id="animacja-papier-wygrywaja" class="animation-choice hidden" src="assets/animations/paper rock scissors/paperWins1.webm" muted></video>
+                <video id="animacja-papier-remis" class="animation-choice hidden" src="assets/animations/paper rock scissors/paperTies.webm" muted></video>
+                <video id="animacja-kamien-przegrywaja" class="animation-choice hidden" src="assets/animations/paper rock scissors/paperWins2.webm" muted></video>
+                <video id="animacja-kamien-wygrywaja" class="animation-choice hidden" src="assets/animations/paper rock scissors/rockWins2.webm" muted></video>
+                <video id="animacja-kamien-remis" class="animation-choice hidden" src="assets/animations/paper rock scissors/rockTies.webm" muted></video>
+            </div>
+        </div>
+        <div class="spr-container2">
+            <button style="margin-left: 0;" class="button" onclick="playGame('papier'); disableButtn();">
+                <img src="assets/images/paper rock scissors/paper-dokonczone.png" alt="Papier" >
+                <video src="assets/animations/paper rock scissors/paper-animation.webm" autoplay loop muted ></video>
+            </button>
+            <button class="button" onclick="playGame('kamien'); disableButtn();">
+                <img id="kamien" src="assets/images/paper rock scissors/rock.png" alt="Kamien" >
+                <video id="kamien-hover" src="assets/animations/paper rock scissors/rock-animation.webm" autoplay loop muted></video>
+            </button>
+            <button class="button" onclick="playGame('nozyce'); disableButtn();">
+                <img src="assets/images/paper rock scissors/scissors.png" alt="Nozyce" >
+                <video src="assets/animations/paper rock scissors/scissors-animation.webm" autoplay loop muted ></video>
+            </button>
+        </div>
+    </div>
+    <script src="scripts/paper_rock_scissors.js"></script>
+    <script src="scripts/navigation.js"></script>
+</body>
+</html>

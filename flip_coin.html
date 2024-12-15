@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/flip coin/flip_coin-icon.png">
+    <link rel="stylesheet" href="styles/flip_coin.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/games-controls.css">
+    <title>Rzut Monetą</title>
+</head>
+<body class="flex">
+<!--games-controls-->
+<div class="logo-container">
+    <a href="arcade.html"><img src="assets/images/arcade/arrow.png"></a>
+    <div class="roll-container">
+        <p class="roll">Wróć</p>
+    </div>
+</div>
+<div class="logo-container2">
+    <a><img src="assets/images/arcade/info-game.png"></a>
+    <div class="roll-container2 flex">
+        <div class="flex">
+            <p class="roll2">Gra polega na wyrzuceniu monety, która może wylądować na orle lub reszce. Wynik zależy od strony, na którą spadnie moneta.</p>
+        </div>  
+    </div>
+</div>
+<!--games-controls-->
+    <div class="flip_coin-con flex">
+        <input type="checkbox" id="start" />
+        <label for="start" class="custom-button" id="trigger-button2">Graj</label>
+        <div class="box-container flex">
+            <div class="box2">
+            </div>
+            <div class="flip_coin-content">
+                <video id="animacja-reszka" class="animation-choice hidden" src="assets/animations/flip coin/coin-heads-animation.webm" muted></video>
+                <video id="animacja-orzel" class="animation-choice hidden" src="assets/animations/flip coin/coin-tails-animation.webm" muted></video>
+            </div>
+        </div>
+        <div class="score-container">
+            <button class="score" onclick="playGame(); disableButton();">Rzuć Monetą</button>
+        </div>
+    </div>
+<!--nav-->
+    <div class="nav-box">
+        <div class="box-shadow"></div>
+        <label class="navigation" for="navigation">
+            <input type="checkbox" id="navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    <input type="checkbox" id="toggle-menu" />
+    <label for="toggle-menu" id="trigger-button"></label>
+    <div id="nav-content">
+        <div class="box-anim">
+            <div class="hide-box">
+                <a href="index.html"><p>Strona główna</p></a>
+            </div>
+            <div class="hide-box">
+                <a href="arcade.html"><p>Salon gier</p></a>
+            </div>
+            <div>
+                <a id="moveBox1" class="triangle-right" href="#">
+                    <p style="margin-bottom: 0;"><img class="triangle1" src="assets/images/navigation/triangle.png"><img class="triangle2" src="assets/images/navigation/triangle2.png">Gry</p>
+                    <div class="tip-games">
+                        <p class="tip">Rozwiń</p>
+                        <p class="tip2">Zwiń</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="box1" class="nav-content-txt">
+            <a href="paper_rock_scissors.html"><p>Papier Kamień Nożyce</p></a>
+            <a href="tic_tac_toe.html"><p>Kółko i Krzyżyk</p></a>
+            <a href="flip_coin.html"><p style="width: 300px;" class="ur-here">Rzut Monetą<span>Jesteś Tutaj</span></p></a>
+            <a href="flappy_bird.html"><p>Flappy Bird</p></a>
+            <a href="aim_lab.html"><p>Aim Lab</p></a>
+        </div>
+        <div id="bg-circle" class="bg-circle-container">
+            <div class="bg-circle"></div>
+        </div>
+    </div>
+    <script src=""></script>
+    <script src="scripts/navigation.js"></script>
+</body>
+</html>

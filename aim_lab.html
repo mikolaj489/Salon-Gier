@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/aim lab/aim_lab-icon.png">
+    <title>Aim Lab</title>
+    <link rel="stylesheet" href="styles/aim_lab.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/games-controls.css">
+</head>
+<body class="flex">
+<!--games-controls-->
+<div class="logo-container">
+    <a href="arcade.html"><img src="assets/images/arcade/arrow.png"></a>
+    <div class="roll-container">
+        <p class="roll">Wróć</p>
+    </div>
+</div>
+<div class="logo-container2">
+    <a><img src="assets/images/arcade/info-game.png"></a>
+    <div class="roll-container2 flex">
+        <div class="flex">
+            <p class="roll2">Gra polega na strzelaniu<br>w pojawiające się na ekranie kółka. Gracz ma<br>za zadanie trafić w każde kółko, które pojawia się<br>w losowych miejscach. Za każde trafienie  zdobywa punkty.</p>
+        </div>  
+    </div>
+</div>
+<!--games-controls-->
+<div class="all-container">
+    <div class="all-content flex">
+        <input type="checkbox" id="start" />
+        <label for="start" class="custom-button" id="trigger-button2">Graj</label>
+        <div class="arrangement1">
+            <div class="box-container flex">
+                <div class="box2 flex">
+                </div>
+                <div class="box flex" id="box">
+                </div>
+                <div class="controls">
+                    <div class="controls-anim flex">
+                        <div>
+                            <div>
+                                <input type="button"  name="restart" class="custom-button  input-button" value="Restart">
+                            </div>
+                            <div>
+                                <a href="#sub1">
+                                    <input type="button" name="target" class="custom-button input-button1" value="Cel" id="toggleButton">
+                                </a>
+                                <div id="sub1" class="sub-overflow flex">
+                                    <div class="sub-style">
+                                        <input type="range" id="sensitivitySlider" min="1" max="100" value="50" class="sub1">
+                                        <p>Rozmiar</p>
+                                    </div><br>
+                                    <div class="sub-style">
+                                        <input type="color" id="color-picker" class="sub1">    
+                                        <p>Kolor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="score-container">
+                <h3 class="score" id="score">Wynik: 0</h3>
+            </div>
+        </div> 
+    </div>
+</div>
+<!--nav-->
+<div class="nav-box">
+    <div class="box-shadow"></div>
+    <label class="navigation" for="navigation">
+        <input type="checkbox" id="navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+</div>
+<input type="checkbox" id="toggle-menu" />
+<label for="toggle-menu" id="trigger-button"></label>
+<div id="nav-content">
+    <div class="box-anim">
+        <div class="hide-box">
+            <a href="index.html"><p>Strona główna</p></a>
+        </div>
+        <div class="hide-box">
+            <a href="arcade.html"><p>Salon gier</p></a>
+        </div>
+        <div>
+            <a id="moveBox1" class="triangle-right" href="#">
+                <p style="margin-bottom: 0;"><img class="triangle1" src="assets/images/navigation/triangle.png"><img class="triangle2" src="assets/images/navigation/triangle2.png">Gry</p>
+                <div class="tip-games">
+                    <p class="tip">Rozwiń</p>
+                    <p class="tip2">Zwiń</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="box1" class="nav-content-txt">
+        <a href="paper_rock_scissors.html"><p>Papier Kamień Nożyce</p></a>
+        <a href="tic_tac_toe.html"><p>Kółko i Krzyżyk</p></a>
+        <a href="flip_coin.html"><p>Rzut Monetą</p></a>
+        <a href="flappy_bird.html"><p>Flappy Bird</p></a>
+        <a href="aim_lab.html"><p style="width:200px;" class="ur-here" >Aim Lab<span>Jesteś Tutaj</span></p></a>
+    </div>
+    <div id="bg-circle" class="bg-circle-container">
+        <div class="bg-circle"></div>
+    </div>
+</div>
+    <script src="scripts/aim_lab.js"></script>
+    <script src="scripts/navigation.js"></script>
+</body>
+</html>
